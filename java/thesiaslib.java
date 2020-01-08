@@ -221,6 +221,6 @@ public class thesiaslib
 				      int numsx);
 
 	static
-	{System.load("/usr/lib/libthesiaslib.so");}
+	{System.loadLibrary("thesiaslib");}
 
 }
