@@ -25,7 +25,19 @@ thesias.jar:
 	cd class && jar cfe thesias.jar GraficT *.class
 	mv class/thesias.jar .
 
-.PHONY: clean
+.PHONY: clean install uninstall
+
+install:
+	install libthesiaslib.so /usr/lib/
+	install thesias.jar /usr/share/java/
+	install misc/THESIAS /usr/bin/
+	install misc/THESIAS.1 /usr/share/man/man1/
+
+uninstall:
+	rm -f /usr/lib/libthesiaslib.so
+	rm -f /usr/share/java/thesias.jar
+	rm -f /usr/bin/THESIAS
+	rm -f /usr/share/man/man1/THESIAS.1
 
 clean:
 	rm -f *.o
