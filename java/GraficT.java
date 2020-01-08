@@ -513,7 +513,8 @@ public class GraficT extends JPanel implements ActionListener, ItemListener  {
 	
 	public void actionPerformed(ActionEvent e) {
 		if("About Thesias".equals(e.getActionCommand())){
-			JOptionPane.showMessageDialog(this, "Testing Haplotype EffectS in Association Study (THESIAS)\nTHESIAS was developped by DA Tregouet,\nINSERM U525, Paris, France.\nFor any information, please contact DA Tregouet at\ndavid-alexandre.tregouet@inserm.fr", "About Thesias.",   JOptionPane.INFORMATION_MESSAGE,new ImageIcon("LogoThesias.jpg"));
+                        java.net.URL imgURL = getClass().getResource("LogoThesias.png");
+			JOptionPane.showMessageDialog(this, "Testing Haplotype EffectS in Association Study (THESIAS)\nTHESIAS was developped by DA Tregouet,\nINSERM U525, Paris, France.\nFor any information, please contact DA Tregouet at\ndavid-alexandre.tregouet@inserm.fr", "About Thesias.",   JOptionPane.INFORMATION_MESSAGE,new ImageIcon(imgURL));
 }
 		
 		

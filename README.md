@@ -1,4 +1,4 @@
-<p align="center"><img src="../master/misc/logo_thesias.png?raw=true" alt="THESIAS"></p>
+<p align="center"><img src="../master/misc/LogoThesias.png?raw=true" alt="THESIAS"></p>
 
 **THESIAS** (**Testing Haplotype EffectS In Association Studies**) is a popular software for carrying haplotype association analysis in unrelated individuals.
 In addition to the command line interface, a graphical JAVA interface is now proposed allowing one to run THESIAS in a user-friendly manner.

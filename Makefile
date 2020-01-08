@@ -22,8 +22,7 @@ libthesiaslib.so:
 
 thesias.jar:
 	javac -d class java/*.java
-	cd class && jar cfe thesias.jar GraficT *.class
-	mv class/thesias.jar .
+	jar cfe thesias.jar GraficT -C class . -C misc LogoThesias.png
 
 .PHONY: clean install uninstall
 
