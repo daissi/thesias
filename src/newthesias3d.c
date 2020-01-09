@@ -5411,7 +5411,7 @@ printf("FIN LECTURE\n");
  {for (i=0;i<nbhhypo;i++) {freqcas[i]=0;freqtem[i]=0;}
  }
 
- printf("RUNNING THE SEM ALGORTIHM ....\n");
+ printf("RUNNING THE SEM ALGORITHM ....\n");
  srand(time(&now)%40);
 
 
