@@ -5,10 +5,10 @@ CFLAGS   ?= -O2
 CPPFLAGS ?=
 LDFLAGS  ?=
 
-JVM_HOME  = $(shell readlink -m $(shell which java)/../../..)
-JVM_INCL  = ${JVM_HOME}/include
+JVM_VER   =java-11-openjdk-amd64
+JVM_HOME  =/usr/lib/jvm/${JVM_VER}/include
 
-CFLAGS   += -fPIC -I${JVM_INCL} -I${JVM_INCL}/linux/
+CFLAGS   += -fPIC -I${JVM_HOME} -I${JVM_HOME}/linux/
 CPPFLAGS +=
 LDFLAGS  += -shared -fPIC
 
