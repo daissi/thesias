@@ -12,13 +12,17 @@ CFLAGS   += -fPIC -I${JVM_HOME} -I${JVM_HOME}/linux/
 CPPFLAGS +=
 LDFLAGS  += -shared -fPIC
 
+LIBNAME   =libthesiaslib
+SOVERSION =0
+SONAME    =${LIBNAME}.so.${SOVERSION}
+
 all: thesias
 
 thesias: libthesiaslib.so thesias.jar
 
 libthesiaslib.so:
 	${CC} ${CPPFLAGS} ${CFLAGS} -c src/*.c
-	${CC} ${LDFLAGS} -Wl,-soname,libthesiaslib.so.0 *.o -o libthesiaslib.so.0
+	${CC} ${LDFLAGS} -Wl,-soname,${SONAME} *.o -o ${SONAME}
 
 thesias.jar:
 	javac -d class java/*.java
