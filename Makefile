@@ -18,6 +18,8 @@ LIBNAME   =libthesiaslib
 SOVERSION =0
 SONAME    =${LIBNAME}.so.${SOVERSION}
 
+PREFIX = /usr/
+
 all: thesias
 
 thesias: libthesiaslib.so thesias.jar
@@ -33,18 +35,22 @@ thesias.jar:
 .PHONY: clean install uninstall
 
 install:
-	install libthesiaslib.so.0 /usr/lib/
-	install thesias.jar /usr/share/java/
-	install misc/THESIAS /usr/bin/
-	install misc/THESIAS.1 /usr/share/man/man1/
-	ln -s /usr/lib/libthesiaslib.so.0 /usr/lib/libthesiaslib.so
+	install -d $(DESTDIR)$(PREFIX)/lib/
+	install libthesiaslib.so.0 $(DESTDIR)$(PREFIX)/lib/
+	install -d $(DESTDIR)$(PREFIX)/share/java/
+	install thesias.jar $(DESTDIR)$(PREFIX)/share/java/
+	install -d $(DESTDIR)$(PREFIX)/bin/
+	install misc/THESIAS $(DESTDIR)$(PREFIX)/bin/
+	install -d $(DESTDIR)$(PREFIX)/share/man/man1/
+	install misc/THESIAS.1 $(DESTDIR)$(PREFIX)/share/man/man1/
+	ln -s $(DESTDIR)$(PREFIX)/lib/libthesiaslib.so.0 $(DESTDIR)$(PREFIX)/lib/libthesiaslib.so
 
 uninstall:
-	rm -f /usr/lib/libthesiaslib.so.0
-	rm -f /usr/lib/libthesiaslib.so
-	rm -f /usr/share/java/thesias.jar
-	rm -f /usr/bin/THESIAS
-	rm -f /usr/share/man/man1/THESIAS.1
+	rm -f $(DESTDIR)$(PREFIX)/lib/libthesiaslib.so.0
+	rm -f $(DESTDIR)$(PREFIX)/lib/libthesiaslib.so
+	rm -f $(DESTDIR)$(PREFIX)/share/java/thesias.jar
+	rm -f $(DESTDIR)$(PREFIX)/bin/THESIAS
+	rm -f $(DESTDIR)$(PREFIX)/share/man/man1/THESIAS.1
 
 clean:
 	rm -f *.o
