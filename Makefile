@@ -18,7 +18,7 @@ thesias: libthesiaslib.so thesias.jar
 
 libthesiaslib.so:
 	${CC} ${CPPFLAGS} ${CFLAGS} -c src/*.c
-	${CC} ${LDFLAGS} *.o -o libthesiaslib.so
+	${CC} ${LDFLAGS} -Wl,-soname,libthesiaslib.so.0 *.o -o libthesiaslib.so.0
 
 thesias.jar:
 	javac -d class java/*.java
@@ -27,12 +27,14 @@ thesias.jar:
 .PHONY: clean install uninstall
 
 install:
-	install libthesiaslib.so /usr/lib/
+	install libthesiaslib.so.0 /usr/lib/
 	install thesias.jar /usr/share/java/
 	install misc/THESIAS /usr/bin/
 	install misc/THESIAS.1 /usr/share/man/man1/
+	ln -s /usr/lib/libthesiaslib.so.0 /usr/lib/libthesiaslib.so
 
 uninstall:
+	rm -f /usr/lib/libthesiaslib.so.0
 	rm -f /usr/lib/libthesiaslib.so
 	rm -f /usr/share/java/thesias.jar
 	rm -f /usr/bin/THESIAS
@@ -41,6 +43,7 @@ uninstall:
 clean:
 	rm -f *.o
 	rm -f *.so
+	rm -f *.so.*
 	rm -f *.jar
 	rm -rf class/
 
