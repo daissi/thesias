@@ -12,6 +12,8 @@ CFLAGS   += -fPIC -I${JVM_HOME} -I${JVM_HOME}/linux/
 CPPFLAGS +=
 LDFLAGS  += -shared -fPIC
 
+export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8
+
 LIBNAME   =libthesiaslib
 SOVERSION =0
 SONAME    =${LIBNAME}.so.${SOVERSION}
