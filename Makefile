@@ -7,7 +7,7 @@ LDFLAGS  ?=
 
 JAVA_VERSION ?=java-11-openjdk-amd64
 JAVA_HOME    ?=/usr/lib/jvm/${JAVA_VERSION}
-UNAME        ?=$(shell uname -s | tr A-Z a-z)
+UNAME        ?=$(shell uname -s | tr '[:upper:]' '[:lower:]')
 
 LIBNAME   =libthesiaslib
 SOVERSION =0
