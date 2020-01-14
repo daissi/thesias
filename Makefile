@@ -7,17 +7,17 @@ LDFLAGS  ?=
 
 JAVA_VERSION ?=java-11-openjdk-amd64
 JAVA_HOME    ?=/usr/lib/jvm/${JAVA_VERSION}
-OS           ?=linux
+UNAME        ?=$(shell uname -s | tr A-Z a-z)
 
 LIBNAME   =libthesiaslib
 SOVERSION =0
 SONAME    =${LIBNAME}.so.${SOVERSION}
 
-CFLAGS   += -fPIC -I${JAVA_HOME}/include -I${JAVA_HOME}/include/${OS}/
+CFLAGS   += -fPIC -I${JAVA_HOME}/include -I${JAVA_HOME}/include/${UNAME}/
 CPPFLAGS +=
 LDFLAGS  += -shared -fPIC
 
-ifeq ($(UNAME), Darwin)
+ifeq ($(UNAME), darwin)
 	LDFLAGS += -Wl,-install_name,${SONAME}
 else
 	LDFLAGS += -Wl,-soname,${SONAME}
