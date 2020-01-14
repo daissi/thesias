@@ -9,15 +9,21 @@ JAVA_VERSION ?=java-11-openjdk-amd64
 JAVA_HOME    ?=/usr/lib/jvm/${JAVA_VERSION}
 OS           ?=linux
 
+LIBNAME   =libthesiaslib
+SOVERSION =0
+SONAME    =${LIBNAME}.so.${SOVERSION}
+
 CFLAGS   += -fPIC -I${JAVA_HOME}/include -I${JAVA_HOME}/include/${OS}/
 CPPFLAGS +=
 LDFLAGS  += -shared -fPIC
 
-export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8
+ifeq ($(UNAME), Darwin)
+	LDFLAGS += -Wl,-install_name,${SONAME}
+else
+	LDFLAGS += -Wl,-soname,${SONAME}
+endif
 
-LIBNAME   =libthesiaslib
-SOVERSION =0
-SONAME    =${LIBNAME}.so.${SOVERSION}
+export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8
 
 PREFIX = /usr
 
@@ -27,7 +33,7 @@ thesias: libthesiaslib.so thesias.jar
 
 libthesiaslib.so:
 	${CC} ${CPPFLAGS} ${CFLAGS} -c src/*.c
-	${CC} ${LDFLAGS} -Wl,-soname,${SONAME} *.o -o ${SONAME}
+	${CC} ${LDFLAGS} *.o -o ${SONAME}
 
 thesias.jar:
 	javac -d class java/*.java
