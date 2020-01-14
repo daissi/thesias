@@ -5,10 +5,15 @@ jobs:
     - os: linux
       dist: bionic
     - os: osx
+      jdk: openjdk11
 
 before_install:
-    - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get update ; fi
-    - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get install -y default-jdk-headless ; fi
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get update ; fi
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get install -y default-jdk-headless ; fi
+
+install:
+  - echo $JAVA_HOME
+  - java --version
 
 script:
   - make
