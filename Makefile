@@ -5,19 +5,18 @@ CFLAGS   ?= -O2
 CPPFLAGS ?=
 LDFLAGS  ?=
 
-JAVA_VERSION ?=java-11-openjdk-amd64
-JAVA_HOME    ?=/usr/lib/jvm/${JAVA_VERSION}
-UNAME        ?=$(shell uname -s | tr '[:upper:]' '[:lower:]')
+JAVA_HOME    ?=/usr/lib/jvm/default-java
+UNAME_S      ?=$(shell uname -s | tr '[:upper:]' '[:lower:]')
 
 LIBNAME   =libthesiaslib
 SOVERSION =0
 SONAME    =${LIBNAME}.so.${SOVERSION}
 
-CFLAGS   += -fPIC -I${JAVA_HOME}/include -I${JAVA_HOME}/include/${UNAME}/
+CFLAGS   += -fPIC -I${JAVA_HOME}/include -I${JAVA_HOME}/include/${UNAME_S}/
 CPPFLAGS +=
 LDFLAGS  += -shared -fPIC
 
-ifeq ($(UNAME), darwin)
+ifeq ($(UNAME_S), darwin)
 	LDFLAGS += -Wl,-install_name,${SONAME}
 else
 	LDFLAGS += -Wl,-soname,${SONAME}
