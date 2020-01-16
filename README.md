@@ -1,16 +1,16 @@
-<p align="center"><img src="../master/misc/LogoThesias.png?raw=true" alt="THESIAS"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/daissi/thesias/master/misc/LogoThesias.png" alt="THESIAS"></p>
 
 **THESIAS** (**Testing Haplotype EffectS In Association Studies**) is a popular software for carrying haplotype association analysis in unrelated individuals.
 In addition to the command line interface, a graphical JAVA interface is now proposed allowing one to run THESIAS in a user-friendly manner.
 Besides, new functionalities have been added to THESIAS including the possibility to analyze polychotomous phenotype and X-linked polymorphisms.
 
 ## Changes
-- 2020/XX/XX: **3.4.1**
+- 2020/01/16: **3.1.1**
   - Clarify license with GPL-3+.
   - Update contact email address.
-  - Update makefile.
+  - New makefile.
 
-- 2007: **3.4**
+- 2007: **3.1**
   - [Download archive](https://github.com/daissi/thesias/releases/download/3.1/ThesiasPackage.zip)
 
 ## License
