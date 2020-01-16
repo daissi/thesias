@@ -1,0 +1,74 @@
+Total number of individuals: 777
+
+Number of individuals with 0 missing data: 668
+Number of individuals with 1 missing data: 68
+Number of individuals with 2 missing data: 41
+
+Phenotypic Mean = 0.528129
+Standard Error  = 0.102162
+
+
+
+Allele frequency at locus 1 (G/A) 0.76048 / 0.23952	p(HWE) = 0.227897
+Allele frequency at locus 2 (C/T) 0.59880 / 0.40120	p(HWE) = 0.293616
+
+Frequencies of Plausible Haplotype under Linkage Equilibrium
+
+Haplotype [0]	GC	0.455377
+Haplotype [1]	GT	0.305102
+Haplotype [2]	AC	0.143426
+Haplotype [3]	AT	0.096095
+
+
+After 2501 iterations burn at step 1500
+
+
+Estimated Haplotype Frequencies under Linkage Disequilibrium
+
+				Estimation	StError		T-Test
+
+Haplotype 1 [0] 	GC	0.447069
+Haplotype 2 [1] 	GT	0.313410	0.014108	22.215651
+Haplotype 3 [2] 	AC	0.151734	0.011732	12.933010
+Haplotype 4 [3] 	AT	0.087787	0.009531	9.210329
+
+
+
+			Haplotype Effects
+				Estimation	StError		T-Test
+
+Intercept	0.296338	0.005028
+
+
+Global Standard Error   0.102162
+Residual Standard Error 0.081730
+
+			Covariable Adjustment
+Covariate 1 
+Column Number 5 		-0.039670	0.006505	-6.098345
+			Diff = -0.03967 [-0.05242 - -0.02692]  p=0.000000
+
+Covariate 2 
+Column Number 6 		0.054967	0.003217	17.085495
+			Diff = 0.05497 [0.04866 - 0.06127]  p=0.000000
+
+
+
+Log-likelihood = -516.857287 (Nb studied subjects = 668)
+Conditionnal Log-likelihood = 725.543449 (df =  3)
+
+
+
+
+
+			LD MATRIX
+
+		 -0.09	
+			
+		
+
+			P-Value MATRIX
+
+		 0.147	
+			
+		

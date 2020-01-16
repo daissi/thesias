@@ -1,0 +1,144 @@
+Total number of individuals: 1295
+
+Number of individuals with 0 missing data: 949
+Number of individuals with 1 missing data: 346
+Number of individuals with 2 missing data: 0
+Number of individuals with 3 missing data: 0
+Number of individuals with 4 missing data: 0
+Number of individuals with 5 missing data: 0
+Number of individuals with 6 missing data: 0
+
+Total number of censored individuals: 129
+Total number of censored individuals without missing data: 129
+
+
+Allele frequency at locus 1 (1/2) 0.97945 / 0.02055	p(HWE) = 0.518100
+Allele frequency at locus 2 (1/2) 0.93151 / 0.06849	p(HWE) = 0.430948
+Allele frequency at locus 3 (1/2) 0.98103 / 0.01897	p(HWE) = 0.551441
+Allele frequency at locus 4 (1/2) 0.99631 / 0.00369	p(HWE) = 0.000000
+Allele frequency at locus 5 (1/2) 0.97998 / 0.02002	p(HWE) = 0.305307
+Allele frequency at locus 6 (2/1) 0.81507 / 0.18493	p(HWE) = 0.583703
+
+Frequencies of Plausible Haplotype under Linkage Equilibrium
+
+Haplotype [0]	111112	0.712293
+Haplotype [1]	111111	0.161613
+Haplotype [2]	111122	0.014552
+Haplotype [3]	111121	0.003302
+Haplotype [4]	111212	0.002637
+Haplotype [5]	111211	0.000598
+Haplotype [6]	111222	0.000054
+Haplotype [8]	112112	0.013772
+Haplotype [9]	112111	0.003125
+Haplotype [10]	112122	0.000281
+Haplotype [11]	112121	0.000064
+Haplotype [16]	121112	0.052375
+Haplotype [17]	121111	0.011883
+Haplotype [18]	121122	0.001070
+Haplotype [19]	121121	0.000243
+Haplotype [24]	122112	0.001013
+Haplotype [25]	122111	0.000230
+Haplotype [26]	122122	0.000021
+Haplotype [27]	122121	0.000005
+Haplotype [32]	211112	0.014943
+Haplotype [33]	211111	0.003390
+Haplotype [48]	221112	0.001099
+
+
+After 2501 iterations burn at step 1500
+
+
+Estimated Haplotype Frequencies under Linkage Disequilibrium
+
+				Estimation			
+
+Haplotype 1 [0] 	111112	0.721310
+Haplotype 2 [1] 	111111	0.164351
+Haplotype 7 [2] 	111122	0.002353
+Haplotype 10 [3] 	111121	0.000816
+Haplotype 6 [4] 	111212	0.003161
+Haplotype 12 [6] 	111222	0.000527
+Haplotype 8 [9] 	112111	0.002115
+Haplotype 5 [11] 	112121	0.016326
+Haplotype 3 [16] 	121112	0.067966
+Haplotype 11 [24] 	122112	0.000527
+Haplotype 4 [32] 	211112	0.019224
+Haplotype 9 [33] 	211111	0.001324
+
+
+Estimated Haplotype Frequencies in	Uncensored (=0)	Censored (=1) individuals
+
+Haplotype 1 [0] 	111112		0.714976	0.761578
+Haplotype 2 [1] 	111111		0.166725	0.149264
+Haplotype 7 [2] 	111122		0.002721	0.000012
+Haplotype 10 [3] 	111121		0.000944	0.000000
+Haplotype 6 [4] 	111212		0.003659	0.000000
+Haplotype 12 [6] 	111222		0.000610	0.000000
+Haplotype 8 [9] 	112111		0.002446	0.000012
+Haplotype 5 [11] 	112121		0.016457	0.015492
+Haplotype 3 [16] 	121112		0.069512	0.058140
+Haplotype 11 [24] 	122112		0.000610	0.000000
+Haplotype 4 [32] 	211112		0.020108	0.013605
+Haplotype 9 [33] 	211111		0.001234	0.001899
+
+
+
+			Haplotype Effects
+				Estimation	StError		T-Test
+
+Intercept 1	111112	
+Haplotype 2	111111		-0.12857	0.158657	-0.810368
+			HRR = 0.87935 [0.64433 - 1.20009]  p=0.417729
+
+Haplotype 7	111122		0.00000	
+Haplotype 10	111121		0.00000	
+Haplotype 6	111212		0.00000	
+Haplotype 12	111222		0.00000	
+Haplotype 8	112111		0.00000	
+Haplotype 5	112121		-0.21458	0.515288	-0.416435
+			HRR = 0.80688 [0.29389 - 2.21528]  p=0.677092
+
+Haplotype 3	121112		-0.18738	0.258669	-0.724386
+			HRR = 0.82913 [0.49939 - 1.37660]  p=0.468829
+
+Haplotype 11	122112		0.00000	
+Haplotype 4	211112		-0.42152	0.601697	-0.700554
+			HRR = 0.65605 [0.20173 - 2.13359]  p=0.483581
+
+Haplotype 9	211111		0.00000	
+
+
+-2 x Log-likelihood (with covariates)    = 1701.020546 (Nb studied subjects = 949)
+-2 x Log-likelihood (without covariates) = 1702.707953     (df =  4)
+
+
+
+Polymorphism 1 1/2
+Haplotypic Background -11112	1-4	HRR = 0.65605 [0.20173 - 2.13359]  p=0.483581
+
+Haplotypic Background -11111	2-9	
+
+Polymorphism 2 1/2
+Haplotypic Background 1-1112	1-3	HRR = 0.82913 [0.49939 - 1.37660]  p=0.468829
+
+
+Polymorphism 3 1/2
+Haplotypic Background 11-111	2-8	
+Haplotypic Background 11-121	10-5	
+Haplotypic Background 12-112	3-11	
+
+Polymorphism 4 1/2
+Haplotypic Background 111-12	1-6	
+Haplotypic Background 111-22	7-12	
+
+Polymorphism 5 1/2
+Haplotypic Background 1111-2	1-7	
+Haplotypic Background 1111-1	2-10	
+Haplotypic Background 1112-2	6-12	
+Haplotypic Background 1121-1	8-5	
+
+Polymorphism 6 2/1
+Haplotypic Background 11111-	1-2	HRR = 0.87935 [0.64433 - 1.20009]  p=0.417729
+
+Haplotypic Background 11112-	7-10	
+Haplotypic Background 21111-	4-9	

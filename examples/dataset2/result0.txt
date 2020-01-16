@@ -1,0 +1,65 @@
+Total number of individuals: 1295
+
+Number of individuals with 0 missing data: 949
+Number of individuals with 1 missing data: 346
+Number of individuals with 2 missing data: 0
+Number of individuals with 3 missing data: 0
+Number of individuals with 4 missing data: 0
+Number of individuals with 5 missing data: 0
+Number of individuals with 6 missing data: 0
+
+
+
+Allele frequency at locus 1 (1/2) 0.97945 / 0.02055	p(HWE) = 0.518100
+Allele frequency at locus 2 (1/2) 0.93151 / 0.06849	p(HWE) = 0.430948
+Allele frequency at locus 3 (1/2) 0.98103 / 0.01897	p(HWE) = 0.551441
+Allele frequency at locus 4 (1/2) 0.99631 / 0.00369	p(HWE) = 0.000000
+Allele frequency at locus 5 (1/2) 0.97998 / 0.02002	p(HWE) = 0.305307
+Allele frequency at locus 6 (2/1) 0.81507 / 0.18493	p(HWE) = 0.583703
+
+Frequencies of Plausible Haplotype under Linkage Equilibrium
+
+Haplotype [0]	111112	0.712293
+Haplotype [1]	111111	0.161613
+Haplotype [2]	111122	0.014552
+Haplotype [3]	111121	0.003302
+Haplotype [4]	111212	0.002637
+Haplotype [5]	111211	0.000598
+Haplotype [6]	111222	0.000054
+Haplotype [8]	112112	0.013772
+Haplotype [9]	112111	0.003125
+Haplotype [10]	112122	0.000281
+Haplotype [11]	112121	0.000064
+Haplotype [16]	121112	0.052375
+Haplotype [17]	121111	0.011883
+Haplotype [18]	121122	0.001070
+Haplotype [19]	121121	0.000243
+Haplotype [24]	122112	0.001013
+Haplotype [25]	122111	0.000230
+Haplotype [26]	122122	0.000021
+Haplotype [27]	122121	0.000005
+Haplotype [32]	211112	0.014943
+Haplotype [33]	211111	0.003390
+Haplotype [48]	221112	0.001099
+
+
+After 2501 iterations burn at step 1500
+
+Frequencies of Plausible Haplotypes under Linkage Disequilibrium
+
+				Estimation	StError	T-Test
+
+Haplotype [0] 	111112 0.721745	
+Haplotype [1] 	111111 0.163918	0.008637	18.977625
+Haplotype [2] 	111122 0.002322	0.000940	2.471133
+Haplotype [3] 	111121 0.000847	0.000725	1.167687
+Haplotype [4] 	111212 0.003161	0.001417	2.230501
+Haplotype [6] 	111222 0.000527	0.000577	0.912491
+Haplotype [9] 	112111 0.002114	0.001057	2.000000
+Haplotype [11] 	112121 0.016326	0.002936	5.561030
+Haplotype [16] 	121112 0.067965	0.005781	11.756979
+Haplotype [24] 	122112 0.000528	0.000528	1.000000
+Haplotype [32] 	211112 0.018820	0.003306	5.692822
+Haplotype [33] 	211111 0.001728	0.001380	1.251853
+
+

@@ -1,0 +1,45 @@
+Total number of individuals: 777
+
+Number of individuals with 0 missing data: 668
+Number of individuals with 1 missing data: 68
+Number of individuals with 2 missing data: 41
+
+
+
+Allele frequency at locus 1 (G/A) 0.76048 / 0.23952	p(HWE) = 0.227897
+Allele frequency at locus 2 (C/T) 0.59880 / 0.40120	p(HWE) = 0.293616
+
+Frequencies of Plausible Haplotype under Linkage Equilibrium
+
+Haplotype [0]	GC	0.455377
+Haplotype [1]	GT	0.305102
+Haplotype [2]	AC	0.143426
+Haplotype [3]	AT	0.096095
+
+
+After 2501 iterations burn at step 1500
+
+Frequencies of Plausible Haplotypes under Linkage Disequilibrium
+
+				Estimation	StError	T-Test
+
+Haplotype [0] 	GC 0.447118	
+Haplotype [1] 	GT 0.313361	0.014063	22.282011
+Haplotype [2] 	AC 0.151684	0.011646	13.024323
+Haplotype [3] 	AT 0.087837	0.009514	9.232228
+
+
+
+
+
+			LD MATRIX
+
+		 -0.09	
+			
+		
+
+			P-Value MATRIX
+
+		 0.149	
+			
+		

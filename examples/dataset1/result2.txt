@@ -1,0 +1,98 @@
+Total number of individuals: 777
+
+Number of individuals with 0 missing data: 668
+Number of individuals with 1 missing data: 68
+Number of individuals with 2 missing data: 41
+
+Phenotypic Mean = 0.528129
+Standard Error  = 0.102162
+
+
+
+Allele frequency at locus 1 (G/A) 0.76048 / 0.23952	p(HWE) = 0.227897
+Allele frequency at locus 2 (C/T) 0.59880 / 0.40120	p(HWE) = 0.293616
+
+Frequencies of Plausible Haplotype under Linkage Equilibrium
+
+Haplotype [0]	GC	0.455377
+Haplotype [1]	GT	0.305102
+Haplotype [2]	AC	0.143426
+Haplotype [3]	AT	0.096095
+
+
+After 2501 iterations burn at step 1500
+
+
+Estimated Haplotype Frequencies under Linkage Disequilibrium
+
+				Estimation	StError		T-Test
+
+Haplotype 1 [0] 	GC	0.447133
+Haplotype 2 [1] 	GT	0.313346	0.014096	22.229222
+Haplotype 3 [2] 	AC	0.151669	0.011670	12.996173
+Haplotype 4 [3] 	AT	0.087852	0.009537	9.212055
+
+
+
+			Haplotype Effects
+		(Haplotypic effect by comparison to the reference with its 95% CI)
+
+				Estimation	StError		T-Test
+
+Intercept 1	GC		0.295749	0.005675
+
+Haplotype 2	GT		0.00757	0.006076	1.245688
+			Diff = 0.00757 [-0.00434 - 0.01948]  p=0.212879
+
+Haplotype 3	AC		-0.01729	0.010006	-1.727418
+			Diff = -0.01729 [-0.03690 - 0.00233]  p=0.084093
+
+Haplotype 4	AT		0.00044	0.009228	0.047999
+			Diff = 0.00044 [-0.01764 - 0.01853]  p=0.961717
+
+
+
+Global Standard Error   0.102162
+Residual Standard Error 0.080890
+
+			Covariable Adjustment
+Covariate 1 
+Column Number 5 		-0.038668	0.006488	-5.960242
+			Diff = -0.03867 [-0.05138 - -0.02595]  p=0.000000
+
+Covariate 2 
+Column Number 6 		0.055734	0.003197	17.432123
+			Diff = 0.05573 [0.04947 - 0.06200]  p=0.000000
+
+
+
+Log-likelihood = -510.447366 (Nb studied subjects = 668)
+Conditionnal Log-likelihood = 731.953549 (df =  6)
+
+
+
+Polymorphism 1 G/A
+Haplotypic Background -C	1-3	Diff = -0.01729 [-0.03690 - 0.00233]  p=0.084093
+
+Haplotypic Background -T	2-4	Diff = -0.00713 [-0.02872 - 0.01447]  p=0.517718
+
+
+Polymorphism 2 C/T
+Haplotypic Background G-	1-2	Diff = 0.00757 [-0.00434 - 0.01948]  p=0.212879
+
+Haplotypic Background A-	3-4	Diff = 0.01773 [-0.01096 - 0.04641]  p=0.225768
+
+
+
+
+			LD MATRIX
+
+		 -0.09	
+			
+		
+
+			P-Value MATRIX
+
+		 0.150	
+			
+		
