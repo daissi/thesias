@@ -1,3 +1,6 @@
+[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](https://bioconda.github.io/recipes/thesias/README.html)
+[![Anaconda-Server Badge](https://anaconda.org/bioconda/thesias/badges/downloads.svg)](https://anaconda.org/bioconda/thesias)
+[![Build Status](https://travis-ci.org/daissi/thesias.svg?branch=master)](https://travis-ci.org/daissi/thesias)
 <p align="center"><img src="https://raw.githubusercontent.com/daissi/thesias/master/misc/LogoThesias.png" alt="THESIAS"></p>
 
 **THESIAS** (**Testing Haplotype EffectS In Association Studies**) is a popular software for carrying haplotype association analysis in unrelated individuals.
