@@ -49,6 +49,8 @@ install:
 	install misc/THESIAS $(DESTDIR)$(PREFIX)/bin/
 	install -d $(DESTDIR)$(PREFIX)/share/man/man1/
 	install misc/THESIAS.1 $(DESTDIR)$(PREFIX)/share/man/man1/
+	install misc/THESIAS.desktop $(DESTDIR)$(PREFIX)/share/applications/
+	install misc/THESIAS_icon.svg $(DESTDIR)$(PREFIX)/share/pixmaps/
 	ln -s $(DESTDIR)$(PREFIX)/lib/jni/${SONAME} $(DESTDIR)$(PREFIX)/lib/jni/${LIBNAME}.so
 
 uninstall:
@@ -57,6 +59,8 @@ uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/share/java/thesias.jar
 	rm -f $(DESTDIR)$(PREFIX)/bin/THESIAS
 	rm -f $(DESTDIR)$(PREFIX)/share/man/man1/THESIAS.1
+	rm -f $(DESTDIR)$(PREFIX)/share/applications/THESIAS.desktop
+	rm -f $(DESTDIR)$(PREFIX)/share/pixmaps/THESIAS_icon.svg
 
 clean:
 	rm -f *.o

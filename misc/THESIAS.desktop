@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=THESIAS
+Comment=Testing Haplotype Effects In Association Studies
+Exec=THESIAS %u
+Terminal=false
+Type=Application
+Icon=THESIAS_icon
+Categories=Science;Biology;Java;
