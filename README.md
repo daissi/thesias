@@ -7,6 +7,26 @@
 In addition to the command line interface, a graphical JAVA interface is now proposed allowing one to run THESIAS in a user-friendly manner.
 Besides, new functionalities have been added to THESIAS including the possibility to analyze polychotomous phenotype and X-linked polymorphisms.
 
+## Installation
+### From sources
+```
+make
+make install
+```
+
+### Bioconda
+```
+conda install -c bioconda thesias
+```
+
+### Debian / Ubuntu
+```
+apt install thesias
+```
+
+### MacOS / MS Windows
+Please refer to the binaries [archive](https://github.com/daissi/thesias/releases/download/3.1/ThesiasPackage.zip).
+
 ## Changes
 - 2020/01/16: **3.1.1**
   - Clarify license with GPL-3+.
