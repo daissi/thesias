@@ -5,22 +5,25 @@ CFLAGS   ?= -O2
 CPPFLAGS ?=
 LDFLAGS  ?=
 
-JAVA_HOME    ?=/usr/lib/jvm/default-java
-UNAME_S      ?=$(shell uname -s | tr '[:upper:]' '[:lower:]')
+CFLAGS   += -fPIC
+CPPFLAGS +=
+LDFLAGS  += -shared -fPIC
 
 LIBNAME   =libthesiaslib
 SOVERSION =0
 SONAME    =${LIBNAME}.so.${SOVERSION}
 
-CFLAGS   += -fPIC -I${JAVA_HOME}/include -I${JAVA_HOME}/include/${UNAME_S}/
-CPPFLAGS +=
-LDFLAGS  += -shared -fPIC
+UNAME_S ?=$(shell uname -s | tr '[:upper:]' '[:lower:]')
 
 ifeq ($(UNAME_S), darwin)
-	LDFLAGS += -Wl,-install_name,${SONAME}
+	JAVA_HOME  ?=`/usr/libexec/java_home`
+	LDFLAGS    += -Wl,-install_name,${SONAME}
 else
-	LDFLAGS += -Wl,-soname,${SONAME}
+	JAVA_HOME  ?=/usr/lib/jvm/default-java
+	LDFLAGS    += -Wl,-soname,${SONAME}
 endif
+
+CFLAGS += -I${JAVA_HOME}/include -I${JAVA_HOME}/include/${UNAME_S}/
 
 export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8
 
