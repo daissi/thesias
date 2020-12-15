@@ -6,7 +6,9 @@ jobs:
       dist: bionic
     - os: osx
       jdk: openjdk11
-
+    - os: linux
+      dist: xenial
+      arch: ppc64le
 before_install:
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get update ; fi
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get install -y default-jdk-headless ; fi
