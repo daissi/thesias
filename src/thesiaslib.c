@@ -26,6 +26,7 @@ extern double ndtri (double);
 extern double gamma (double);
 extern double chdtrc(double, double);
 extern int mtherr(char *, int );
+extern int thesiasRun(char*, int, int, int*, int, int, int, int, int, int, int, int, int, int*, int, int);
 
 JNIEXPORT jint JNICALL Java_thesiaslib_thesiasRun
   (JNIEnv      *env, 
