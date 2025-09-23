@@ -221,7 +221,7 @@ int nall, n;
 void determhapo();
 void nbhapo1(vectgen);
 void nbhapo0(vectgen);
-void initfreq();
+void initfreq(double*);
 void lecteffe();
 void generhap();
 double probatot();
